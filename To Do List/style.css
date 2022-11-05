@@ -1,0 +1,122 @@
+
+    *{
+         padding:0px;
+         border:none;
+
+    }
+
+    :root{
+        --main_color_darkPink: #EEBAB2;
+        --main_color_lightGreen: #CCD4BF;
+        --secondary_color_white: #F5F3E7 ;
+    }
+
+    body{
+        /* background-color: var(--secondary_color_white); */
+        background-image: linear-gradient(var(--secondary_color_white) ,var(--secondary_color_white)  ,var(--secondary_color_white),var(--secondary_color_white)  ,var(--secondary_color_white) ,var(--secondary_color_white),  var(--main_color_darkPink));
+        /* تم استيراد الخط */
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    /* الخلفية */
+    #all_site{
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        direction: rtl;
+    }
+
+    /* جدول المهام */
+    #box_toDo{
+        width:70%;
+        margin-top: 10vh;
+    }
+   
+    /* عنوان الجدول */
+    #header_box{
+        height: 50px;
+        background-color: var(--main_color_darkPink);
+        color: white;
+        text-align: center;
+        padding: 5px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        border-top-left-radius: 12px;
+        border-top-right-radius:12px;
+    }
+
+    #header_box h2{
+        display: inline-block; 
+        margin-top: 15px;
+        margin-bottom: 0px;
+        margin-left: 90px;
+    }
+
+    /* قائمة المهام */
+   #list_box{
+        background-color: var(--main_color_lightGreen);
+        padding: 20px;
+        padding-top: 35px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+       
+    }   
+
+    /* المهمة */
+    .task{
+        width:100%;
+        height: 60px;
+        margin: 0px auto;
+        background-color: var(--secondary_color_white);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        display: flex;
+        transition:border 0.1s;
+        margin-bottom: 8px;
+    }
+
+    .done{
+        background-image: linear-gradient(var(--secondary_color_white), var(--main_color_darkPink));
+    }
+    
+    .task:hover{
+        border: #EEBAB2 solid 3px;
+    }
+
+    /* تفاصيل المهمة */
+   .name_task{
+        width:70%;
+        height: 50px;
+        align-items: center;
+        justify-content:right;
+        padding-right: 20px;
+   }
+
+   .name_task h4{
+         margin-bottom: 0px;
+         margin-top: 19px;
+         font-size: 18px;
+   }
+
+   .name_task p{
+         font-size: 11px; 
+         margin: 2px; 
+   }
+
+   /* العمليات على المهمة */
+   .crud{
+        width:25%;
+        height: 50px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .crud_btn{
+        border-radius: 5px; height:35px;width:35px;background-color: var(--secondary_color_white) ;font-size: larger;box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    }
+
+    .crud_btn:hover{
+        box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.75);
+        cursor: pointer;
+    }
